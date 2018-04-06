@@ -1,22 +1,21 @@
 **Init**
 
 `````
-
 install-docker.sh
-
-cd rpi-phpmyadmin-image
-docker build . -t chieftainy2k/rpi-phpmyadmin
-
-cd ../docker
-docker-compose up -d phpmyadmin
-
+cd docker
+docker-compose up -d 
 `````
 
 
-**Docker: clean up**
+**Docker: clean up ALL containers/images**
 `````
 docker kill $(docker ps -q)
 docker rm $(docker ps -a -q)
-docker rmi $(docker images -q)
+docker rmi -f $(docker images -q)
 `````
 
+**(Optional) Build phpmyadmin image for RPI**
+`````
+cd rpi-phpmyadmin-image
+docker build . -t chieftainy2k/rpi-phpmyadmin
+`````
