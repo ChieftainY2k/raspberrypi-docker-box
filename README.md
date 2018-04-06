@@ -1,8 +1,15 @@
 **Init**
 
 `````
-cd docker
+
+install-docker.sh
+
+cd rpi-phpmyadmin-image
+docker build . -t rpi-phpmyadmin
+
+cd ../docker
 docker-compose up -d phpmyadmin
+
 `````
 
 
