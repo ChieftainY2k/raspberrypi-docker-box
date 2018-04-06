@@ -1,4 +1,9 @@
-**Init**
+**Description**
+
+This docker-compose configuration will let you run phpMyAdmin/MySQL combo on a Raspberry Pi A.
+This configuration was successfully tested against Raspbian Stretch.
+
+**Docker installation**
 
 `````
 install-docker.sh
