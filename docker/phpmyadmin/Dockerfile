@@ -1,2 +1,2 @@
-FROM rpi-phpmyadmin
+FROM chieftainy2k/rpi-phpmyadmin
 
