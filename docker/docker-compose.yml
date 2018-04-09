@@ -41,3 +41,17 @@ services:
 #    build: ./storage/
 #    volumes:
 #      - /var/tmp/docker-storage/:/storage
+
+  #######################################
+  # UI for containers
+  # See https://blog.hypriot.com/post/new-docker-ui-portainer/
+  #######################################
+  ui:
+    image: hypriot/rpi-dockerui
+#    restart: always
+    volumes:
+      - '/var/run/docker.sock:/var/run/docker.sock'
+    expose:
+      - 9000
+    ports:
+      - 81:9000

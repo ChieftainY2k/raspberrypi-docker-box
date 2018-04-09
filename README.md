@@ -16,6 +16,13 @@ cd docker
 docker-compose up -d 
 `````
 
+**Access the app**
+
+`````
+IP:80 = phpMyAdmin
+IP:81 = DockerUI
+`````
+
 **Clean up ALL containers/images**
 `````
 docker kill $(docker ps -q)
