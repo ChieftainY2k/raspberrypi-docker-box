@@ -2,7 +2,6 @@ version: '2'
 
 services:
 
-
   #######################################
   # phpMyAdmin
   #######################################
@@ -13,9 +12,7 @@ services:
     environment:
       - PMA_ARBITRARY=1
     ports:
-      - "80:80"
-#    volumes:
-#      - /sessions
+      - 80:80
 
 
   #######################################
@@ -24,23 +21,13 @@ services:
   #######################################
   mysql:
     build: ./mysql/
-#    volumes_from:
-#      - storage
-#    volumes:
-#      - /code/:/app/
     environment:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=mydatabase
       - MYSQL_USER=myuser
       - MYSQL_PASSWORD=mypassword
-
-#  #######################################
-#  # Storage
-#  #######################################
-#  storage:
-#    build: ./storage/
-#    volumes:
-#      - /var/tmp/docker-storage/:/storage
+    ports:
+      - 3306:3306
 
   #######################################
   # UI for containers
@@ -51,7 +38,5 @@ services:
 #    restart: always
     volumes:
       - '/var/run/docker.sock:/var/run/docker.sock'
-    expose:
-      - 9000
     ports:
       - 81:9000

@@ -1,7 +1,7 @@
 **Description**
 
-This docker-compose configuration will let you run phpMyAdmin/MySQL combo on a Raspberry Pi A.
-This configuration was successfully tested against Raspbian Stretch.
+This is a simple docker setup packed with some goodies for Raspberry Pi A.
+This configuration was successfully tested with the Raspbian Stretch on Raspberry Pi A.
 
 **Docker installation**
 
@@ -20,7 +20,8 @@ docker-compose up -d
 
 `````
 IP:80 = phpMyAdmin
-IP:81 = DockerUI
+IP:81 = Hypriot Docker UI
+IP:3306 = MySQL server
 `````
 
 **Clean up ALL containers/images**

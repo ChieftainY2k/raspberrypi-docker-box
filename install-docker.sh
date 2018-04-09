@@ -36,4 +36,4 @@ pip install docker-compose
 
 # Run a quick test to see if it works
 sudo docker run --rm arm32v5/hello-world
-#sudo docker run --rm arm32v7/hello-world
+
