@@ -19,8 +19,9 @@ docker-compose up -d
 **Access the app**
 
 `````
-IP:80 = phpMyAdmin (https://www.phpmyadmin.net/)
-IP:81 = Hypriot Docker UI (https://blog.hypriot.com/post/new-docker-ui-portainer/)
+IP:80 = Web server (https://github.com/hypriot/rpi-busybox-httpd)
+IP:81 = phpMyAdmin (https://www.phpmyadmin.net/)
+IP:82 = Hypriot Docker UI (https://blog.hypriot.com/post/new-docker-ui-portainer/)
 IP:3306 = MySQL server (https://www.mysql.com/)
 `````
 

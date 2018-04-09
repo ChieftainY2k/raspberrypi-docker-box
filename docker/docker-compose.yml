@@ -3,6 +3,15 @@ version: '2'
 services:
 
   #######################################
+  # Web Server
+  #######################################
+  webserver:
+    image: hypriot/rpi-busybox-httpd
+    ports:
+      - 80:80
+
+
+  #######################################
   # phpMyAdmin
   #######################################
   phpmyadmin:
@@ -12,7 +21,7 @@ services:
     environment:
       - PMA_ARBITRARY=1
     ports:
-      - 80:80
+      - 81:80
 
 
   #######################################
@@ -35,8 +44,7 @@ services:
   #######################################
   ui:
     image: hypriot/rpi-dockerui
-#    restart: always
     volumes:
       - '/var/run/docker.sock:/var/run/docker.sock'
     ports:
-      - 81:9000
+      - 82:9000
