@@ -1,7 +1,7 @@
 **Description**
 
-This is a simple docker setup packed with some goodies for Raspberry Pi A.
-This configuration was successfully tested with the Raspbian Stretch on Raspberry Pi A.
+This is a simple docker setup packed with some goodies for **Raspberry Pi A**.
+This configuration was successfully tested with the **Raspbian Stretch on Raspberry Pi A**.
 
 **Docker installation**
 
@@ -19,9 +19,9 @@ docker-compose up -d
 **Access the app**
 
 `````
-IP:80 = phpMyAdmin
-IP:81 = Hypriot Docker UI
-IP:3306 = MySQL server
+IP:80 = phpMyAdmin (https://www.phpmyadmin.net/)
+IP:81 = Hypriot Docker UI (https://blog.hypriot.com/post/new-docker-ui-portainer/)
+IP:3306 = MySQL server (https://www.mysql.com/)
 `````
 
 **Clean up ALL containers/images**
