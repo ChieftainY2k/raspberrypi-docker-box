@@ -22,7 +22,7 @@ echo "deb [arch=armhf] https://download.docker.com/linux/$(. /etc/os-release; ec
 
 # Install Docker
 sudo apt update
-sudo apt install docker-ce
+sudo apt install -y docker-ce
 
 sudo systemctl enable docker
 sudo systemctl start docker
@@ -32,7 +32,7 @@ apt update
 apt install -y python python-pip
 
 # Install Docker Compose from pip
-pip install docker-compose
+pip install -y docker-compose
 
 # Run a quick test to see if it works
 sudo docker run --rm arm32v5/hello-world
