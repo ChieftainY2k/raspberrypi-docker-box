@@ -28,12 +28,14 @@ sudo systemctl enable docker
 sudo systemctl start docker
 
 # Install required packages
-apt update
 apt install -y python python-pip
 
 # Install Docker Compose from pip
 pip install -y docker-compose
 
-# Run a quick test to see if it works
+# Run a quick test to see if it works (Raspberry Pi 1)
 sudo docker run --rm arm32v5/hello-world
+
+# Run a quick test to see if it works (Raspberry Pi 2)
+sudo docker run --rm arm32v7/hello-world
 
