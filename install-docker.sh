@@ -31,7 +31,7 @@ sudo systemctl start docker
 apt install -y python python-pip
 
 # Install Docker Compose from pip
-pip install -y docker-compose
+pip install docker-compose
 
 # Run a quick test to see if it works (Raspberry Pi 1)
 sudo docker run --rm arm32v5/hello-world
